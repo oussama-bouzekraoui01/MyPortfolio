@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3c65d4a6ca.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <div id="logo"><p><span>O</span>ussama <span>B</span>ouzekraoui</p></div>
+                <div id="logo"><p><span>M</span>y <span>P</span>ortfolio</p></div>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -31,6 +32,222 @@
 
         </div>
     </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="image2.png" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a holder of an engineering degree in computer science with a specialization in software engineering and quality from
+                    the Mohammadia School of Engineers, I have gained a strong expertise in Software engineering over the course of my years of
+                    academic experience. I have had the opportunity to work on various projects, from design to implementation,
+                    including maintenance and optimization. These experiences have allowed me to develop a deep understanding of new
+                    technologies, coding best practices, and agile development methodologies.</p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming languages</span><br>Java -
+                            Python - C - C# - R - VBA - PL/SQL</li>
+                            <li><span>Web Technologies</span><br>HTML - CSS -
+                            JavaScript - TypeScript - Bootstrap -
+                            React - Spring - Django - Angular</li>
+                            <li><span>Softwares</span><br>Apache Kafka - Terraform -
+                            Docker - Kubernetes</li>
+                            <li><span>Organization tools</span><br>Jira - Trello -
+                            GitHub - Clickup - Bitbucket</li>
+                            <li><span>DBMS</span><br>Oracle - MySQL - PostgreSQL
+                            - MongoDB - SQLite</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>End of Study Internship</span><br>CGI<br>Implementation of a CI/CD pipeline using Terraform.</li>
+                            <li><span>Engineer Internship </span><br>Stark Solutions<br>mprovement of a Full Stack web application designed for clinic management.</li>
+                            <li><span>Observation Internship </span><br>ORMVA<br>Development of a web application for electronic document management that allows users
+                            to upload or download archived documents.</li>
+                        </ul>
+                    
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Engineering degree, Software Engineering</span><br>Mohammadia School of Engineering</li>
+                            <li><span>Preparatory Classes for Engineering Schools</span><br>Moulay Driss High Schoo</li>
+                            <li><span>Baccalaureate in Mathematics Sciences</span><br>Sijilmassa High School</li>
+                        </ul>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Fullstack Developer</h2>
+                    <p>As a Java Full Stack Developer with expertise in both front-end and back-end development. With 2 years of academic experience, I
+                    create seamless web applications, using technologies like Java, Spring, React, Angular and more. I'm passionate about building
+                    user-friendly and efficient solutions. Let's code and innovate together!</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrows-spin"></i>
+                    <h2>DevOps Engineer</h2>
+                    <p>As a DevOps Engineer. I specialize in streamlining software delivery pipelines, automating
+                    processes, and ensuring efficient collaboration between development and operations teams. Let's optimize your workflows
+                    and deploy software faster!</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Engineer</h2>
+                    <p>As a Cloud Engineer. I specialize in designing, deploying, and managing cloud infrastructure.
+                    Let's leverage the power of the cloud to scale your projects efficiently!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="virtual-asisstant.png">
+                    <div class="layer">
+                        <h3>Virtual Assistant</h3>
+                        <p>Development of an AI Assistant that facilitates the management of various tasks performed
+                        by an assistant within a company.</p>
+                        <a href="https://github.com/oussama-bouzekraoui01/APIs"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="bot.png">
+                    <div class="layer">
+                        <h3>Ecole Chatbot</h3>
+                        <p>Development of a Chatbot dedicated to individuals seeking information about a specific
+                        school (majors, registration fees, etc.).</p>
+                        <a href="https://github.com/oussama-bouzekraoui01/EcoleChatbot"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="film.png">
+                    <div class="layer">
+                        <h3>MyMovies</h3>
+                        <p>Development of a movie management application using the TMDB API.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work item-invisible">
+                    <img src="weather.png">
+                    <div class="layer">
+                        <h3>Weather App Forecast</h3>
+                        <p>Development of a mobile application aimed at providing weather information for a specific
+                        city or based on the user's location.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work item-invisible">
+                    <img src="shop.png">
+                    <div class="layer">
+                        <h3>MyShopDemand</h3>
+                        <p>Development of a mobile application that degitize the shopping experience</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" onclick="openworks()">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> oussamabouzekraoui01@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +212616315303</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/oussama-bouzekraoui-b81300201/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.xing.com/profile/Oussama_BOUZEKRAOUI083568/cv"><i class="fa-brands fa-xing"></i></a>
+                        <a href="https://github.com/oussama-bouzekraoui01"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="image2.png" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © MyPortfolio</p>
+        </div>
+    </div>
+
+<script>
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwxzudm4LHO5GFGpV2q3SWOoQ9esxvM43qhrRyRt64oHEvyX-lp54i-NuYxbIxkCH87Rg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script>
+
+
+    var works = document.getElementsByClassName("work");
+    
+
+    function openworks() {
+        for (work of works) {
+            work.classList.remove("item-invisible");
+        }
+    }
+
+</script>
     
 </body>
 </html>
