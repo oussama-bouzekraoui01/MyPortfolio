@@ -150,7 +150,7 @@
                         <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work item-invisible">
+                <div name="invisible" class="work item-invisible">
                     <img src="weather.png">
                     <div class="layer">
                         <h3>Weather App Forecast</h3>
@@ -159,7 +159,7 @@
                         <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work item-invisible">
+                <div name="invisible" class="work item-invisible">
                     <img src="shop.png">
                     <div class="layer">
                         <h3>MyShopDemand</h3>
@@ -168,7 +168,7 @@
                     </div>
                 </div>
             </div>
-            <a class="btn" onclick="openworks()">See more</a>
+            <a class="btn" id="btn" onclick="openworks()">See more</a>
         </div>
     </div>
     <div id="contact">
@@ -240,12 +240,25 @@
 </script>
 <script>
 
+    var works = document.getElementsByName("invisible")
+    var btn = document.getElementById("btn")
 
-    var works = document.getElementsByClassName("work");
+    
+
 
     function openworks() {
-        for (work of works) {
-            work.classList.remove("item-invisible");
+
+        if(btn.textContent === "See more") {
+            for(work of works) {
+                work.classList.remove("item-invisible")   
+            }
+            btn.textContent = "See less"
+        }
+        else{
+            for(work of works) {
+                work.classList.add("item-invisible")
+            }
+            btn.textContent = "See more"
         }
     }
 
